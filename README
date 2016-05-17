@@ -1,0 +1,25 @@
+libpcd8544:
+library to provide output to the Nokia 5110 LCD through simple 'c' APIs
+
+
+To clean:
+make clean
+   or
+git clean -dxf
+
+Depends:
+libwiringPi
+
+To build:
+./autogen.sh prefix=/usr
+make
+sudo make install
+
+
+Output:
+/usr/lib/libpcd8544.so
+/usr/include/PCD8544.h
+
+
+Usage:
+-lpcd8544
